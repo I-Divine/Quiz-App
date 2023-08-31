@@ -11,7 +11,6 @@ const Question = ({
   marking,
   setMarking,
 }) => {
-  // console.log(options)
   return (
     <div className={styles.container}>
       <h3>Select the most correct option</h3>

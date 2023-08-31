@@ -1,6 +1,5 @@
 import { useState } from "react";
 import style from "../style.module.css";
-// import { saveCorrectOption, optionCheck } from "./ChangeButtons";
 const SubmitButton = ({ marking, correctOption, setMarking }) => {
   const optionCheck = () => {
     if (document.getElementById("1").checked && correctOption === 1) {
@@ -21,7 +20,6 @@ const SubmitButton = ({ marking, correctOption, setMarking }) => {
     }
   };
   const saveCorrectOption = (value) => {
-    // setCorrect(value);
     setMarking((currentValue) => [...currentValue, value]);
     console.log(marking);
   };

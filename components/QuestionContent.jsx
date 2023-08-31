@@ -42,9 +42,5 @@ export const content = [
     ["hard drive", "cpu", "pc brain", "memory card"],
     2
   ),
-  // new questionContent(
-  // "d"
-  // )
 ];
-// export const content ="Hey";
 export default questionContent;
