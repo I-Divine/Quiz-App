@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  /* width: 100%; */
+  font-size: 1.5em;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+.modal {
+  position: fixed;
+  left: 30%;
+  top: 30%;
+  border: 2px solid black;
+  border-radius: 0.5em;
+  background-color: azure;
+  padding: 20px;
+  /* transform: translate(30%, 40%); */
+  z-index: 1000;
+}
+.modal h3,
+.modal button {
+  font-size: 2em;
+}
+.options {
+  margin: 20px 0;
+}
+.changeButton {
+}
+.SubmitButton :disabled {
+  background-color: rgb(180, 108, 93);
+}
+.SubmitButton button {
+  padding: 5px 10px;
+  margin: 20px;
+  font-size: 2em;
+  float: right;
+  /* text-align: right; */
+  background-color: tomato;
+  color: azure;
+  border: none;
+  border-radius: 5px;
+}
+.changeButton button :hover {
+  background-color: tomato;
+}
+.changeButton button {
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 1em;
+  background-color: dodgerblue;
+  color: azure;
+  border: none;
+  border-radius: 5px;
+}
+.changeButton :disabled {
+  background-color: rgb(154, 182, 211);
+  color: azure;
+}
+.Timer {
+  display: flex;
+  justify-content: flex-end;
+  /* float: right; */
+  margin: 25px;
+
+  font-size: 2.5em;
+  font-weight: 500;
+}
+.Timer span {
+  padding-left: 20px;
+  color: tomato;
+}
+.Header {
+  font-size: 2em;
+  background-color: dodgerblue;
+  width: 100vw;
+  padding: 20px;
+  color: azure;
+}
+.Header h1 {
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
