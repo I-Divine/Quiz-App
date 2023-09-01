@@ -15,7 +15,7 @@ const App = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <>
       <Header></Header>
       <Timer time={time} timeUp={timeUp}>
         {" "}
@@ -40,8 +40,8 @@ const App = () => {
         total={question.length}
       />
 
-      <button onClick={() => setIsOpen(true)}>Open</button>
-    </div>
+      {/* <button onClick={() => setIsOpen(true)}>Open</button> */}
+    </>
   );
 };
 export default App;
