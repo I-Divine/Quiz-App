@@ -7,24 +7,34 @@ class questionContent {
 }
 export const content = [
   new questionContent(
-    "Fishes breathe through thier _________.",
-    ["Fins", "Gills", "Mouth", "Tail"],
-    2
+    "Computers surf the internet through a _________.",
+    ["network device", "data", "programmming language", "browser"],
+    4
   ),
   new questionContent(
-    "Birds are able to fly because they have _________.",
-    ["wings", "beak", "teeth", "scales"],
+    "We can track his location with a  _________ technology.",
+    ["Micro Chip", "Tracker", "GPS", "Address"],
     1
   ),
   new questionContent("How many legs does a lizard have?", [1, 2, 3, 4], 4),
   new questionContent(
-    "The following are characteristics of a fish EXCEPT ___________. ",
-    ["scales", "hair", "fins", "gills"],
-    2
+    "The following are characteristics of a computer EXCEPT ___________. ",
+    ["general purpose", "expensive", "reliable", "slow"],
+    4
   ),
   new questionContent(
-    "Which animal can fly?",
-    ["lizard", "bat", "dog", "man"],
+    "How many bytes are in a mega-byte?",
+    ["1 million bytes", "1 trillion bytes", "1000 bits", "2000 bytes"],
+    1
+  ),
+  new questionContent(
+    "What is the meaning of LAN?",
+    [
+      "Low Access Network",
+      "Local Area Network",
+      "Local Access Network",
+      "Large Area Network",
+    ],
     2
   ),
   new questionContent(
@@ -34,12 +44,32 @@ export const content = [
   ),
   new questionContent(
     "Which animal can lay eggs?",
-    ["lizard", "bat", "dog", "fish"],
+    ["man", "bat", "dog", "fish"],
     4
   ),
   new questionContent(
     "What is the brain of the computer",
     ["hard drive", "cpu", "pc brain", "memory card"],
+    2
+  ),
+  new questionContent(
+    "What type of device is a keyboard",
+    ["input", "output", "none", "both"],
+    1
+  ),
+  new questionContent(
+    "Which of the following is a browser",
+    ["file explorer", "Ms Word", "chrome", "none of the above"],
+    2
+  ),
+  new questionContent(
+    "What is the meaning of HTML",
+    [
+      "High Transmission Main Line",
+      "Hyper Text Markup Language",
+      "Hyper Transit Main Language",
+      "none of the above",
+    ],
     2
   ),
 ];

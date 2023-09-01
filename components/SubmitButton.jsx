@@ -35,7 +35,7 @@ const SubmitButton = ({
   const [totalmark, setMark] = useState(0);
   const submitTest = () => {
     optionCheck();
-
+    setIsOpen(true);
     document.getElementById("submitBtn").disabled = true;
     document.getElementById("changeBtn").disabled = true;
     marking.forEach((mark) => {
