@@ -1,6 +1,14 @@
 import { useState } from "react";
+import Modal from "./scoreModal";
 import style from "../style.module.css";
-const SubmitButton = ({ marking, correctOption, setMarking }) => {
+const SubmitButton = ({
+  marking,
+  correctOption,
+  setMarking,
+  isOpen,
+  setIsOpen,
+  total,
+}) => {
   const optionCheck = () => {
     if (document.getElementById("1").checked && correctOption === 1) {
       saveCorrectOption(true);
@@ -43,11 +51,21 @@ const SubmitButton = ({ marking, correctOption, setMarking }) => {
     console.log(marking);
   };
   return (
-    <div className={style.SubmitButton}>
-      <button id="submitBtn" onClick={submitTest}>
-        Submit
-      </button>
-    </div>
+    <>
+      {" "}
+      <div className={style.SubmitButton}>
+        <button id="submitBtn" onClick={submitTest}>
+          Submit
+        </button>
+      </div>
+      {isOpen && (
+        <Modal
+          setIsOpen={setIsOpen}
+          maxMark={total}
+          totalmark={totalmark}
+        ></Modal>
+      )}
+    </>
   );
 };
 

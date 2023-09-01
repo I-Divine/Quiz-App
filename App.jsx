@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Timer from "./components/Timer";
 import { content } from "./components/QuestionContent";
 import SubmitButton from "./components/SubmitButton";
-import Modal from "./components/scoreModal";
+// import Modal from "./components/scoreModal";
 const App = () => {
   const [questionNo, setQNO] = useState(0);
   const [questions, setQs] = useState(content);
@@ -35,8 +35,11 @@ const App = () => {
         marking={marking}
         correctOption={question[questionNo].correctOption}
         setMarking={setMarking}
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        total={question.length}
       />
-      {isOpen && <Modal setIsOpen={setIsOpen} />}
+
       <button onClick={() => setIsOpen(true)}>Open</button>
     </div>
   );

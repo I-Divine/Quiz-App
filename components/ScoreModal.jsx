@@ -1,14 +1,19 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import style from "../style.module.css";
-const Modal = ({ setIsOpen }) => {
-  return (
-    <div className={style.modal}>
-      <h3>Score</h3>
-      <h5></h5>
-      <button onClick={() => setIsOpen(false)}>close</button>
-    </div>
+// this modal displays the score at the end of the test
+const Modal = ({ setIsOpen, maxMark, totalmark }) => {
+  return ReactDOM.createPortal(
+    <>
+      <div className={style.modaloverlay} />
+      <div className={style.modal}>
+        <h3>
+          Score: {totalmark}/{maxMark}
+        </h3>
+        <button onClick={() => setIsOpen(false)}>close</button>
+      </div>
+    </>,
+    document.getElementById("scoreModal")
   );
 };
-// const portal = ReactDOM.createPortal(document.getElementById("scoreModal"));
 export default Modal;
