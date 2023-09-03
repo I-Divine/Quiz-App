@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import Timer from "./components/Timer";
 import { content } from "./components/QuestionContent";
 import SubmitButton from "./components/SubmitButton";
-// import Modal from "./components/scoreModal";
 const App = () => {
   const [questionNo, setQNO] = useState(0);
   const [questions, setQs] = useState(content);

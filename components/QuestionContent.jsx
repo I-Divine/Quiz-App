@@ -14,7 +14,7 @@ export const content = [
   new questionContent(
     "We can track his location with a  _________ technology.",
     ["Micro Chip", "Tracker", "GPS", "Address"],
-    1
+    3
   ),
   new questionContent("How many legs does a lizard have?", [1, 2, 3, 4], 4),
   new questionContent(
@@ -43,8 +43,8 @@ export const content = [
     1
   ),
   new questionContent(
-    "Which animal can lay eggs?",
-    ["man", "bat", "dog", "fish"],
+    "Which of the following is a storage device?",
+    ["mouse", "cpu", "keyboard", "SSD"],
     4
   ),
   new questionContent(
@@ -60,7 +60,7 @@ export const content = [
   new questionContent(
     "Which of the following is a browser",
     ["file explorer", "Ms Word", "chrome", "none of the above"],
-    2
+    3
   ),
   new questionContent(
     "What is the meaning of HTML",
@@ -71,6 +71,26 @@ export const content = [
       "none of the above",
     ],
     2
+  ),
+  new questionContent(
+    "What does GUI stand for?",
+    [
+      "Grey Unit Image",
+      "Grid Union Index",
+      "Graphic User Interface",
+      "Graphic User Information",
+    ],
+    3
+  ),
+  new questionContent(
+    "What does GUI stand for?",
+    [
+      "Grey Unit Image",
+      "Grid Union Index",
+      "Graphic User Interface",
+      "Graphic User Information",
+    ],
+    3
   ),
 ];
 export default questionContent;

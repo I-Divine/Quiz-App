@@ -12,6 +12,8 @@
   position: fixed;
   left: 50%;
   top: 50%;
+  width: 80vw;
+  max-width: 500px;
   transform: translate(-50%, -50%);
   border: 2px solid black;
   border-radius: 0.5em;
@@ -19,9 +21,25 @@
   padding: 20px;
   z-index: 1000;
 }
-.modal h3,
+.modal .startover {
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+}
+.modal h3 {
+  font-size: 2em;
+  margin: 5px;
+  border-radius: 5px;
+}
 .modal button {
   font-size: 2em;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.modal h2 {
+  color: red;
+  font-size: 3em;
 }
 .modaloverlay {
   background-color: rgba(0, 0, 0, 0.4);
