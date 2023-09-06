@@ -14,6 +14,9 @@ const Question = ({
   return (
     <div className={styles.container}>
       <h3>Select the most correct option</h3>
+      <p className={styles.questionNo}>
+        {questionNo + 1} / {questions.length}
+      </p>
       <div>{question}</div>
       <Options options={options}></Options>
       <ChangeButton
