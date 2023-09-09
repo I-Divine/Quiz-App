@@ -12,16 +12,22 @@ const SubmitButton = ({
   const optionCheck = () => {
     if (document.getElementById("1").checked && correctOption === 1) {
       saveCorrectOption(true);
+      document.getElementById("1").checked = false;
+
       console.log("correct");
     } else if (document.getElementById("2").checked && correctOption === 2) {
       saveCorrectOption(true);
+      document.getElementById("2").checked = false;
+
       console.log("correct");
     } else if (document.getElementById("3").checked && correctOption === 3) {
       console.log("correct");
       saveCorrectOption(true);
+      document.getElementById("3").checked = false;
     } else if (document.getElementById("4").checked && correctOption === 4) {
       console.log("correct");
       saveCorrectOption(true);
+      document.getElementById("4").checked = false;
     } else {
       saveCorrectOption(false);
       console.log("false");
