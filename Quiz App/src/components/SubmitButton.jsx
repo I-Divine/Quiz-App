@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Modal from "./ScoreModal";
 import style from "../style.module.css";
 const SubmitButton = ({
@@ -13,49 +13,43 @@ const SubmitButton = ({
     if (document.getElementById("1").checked && correctOption === 1) {
       saveCorrectOption(true);
       document.getElementById("1").checked = false;
-
-      // console.log("correct");
     } else if (document.getElementById("2").checked && correctOption === 2) {
       saveCorrectOption(true);
       document.getElementById("2").checked = false;
-
-      // console.log("correct");
     } else if (document.getElementById("3").checked && correctOption === 3) {
-      // console.log("correct");
       saveCorrectOption(true);
       document.getElementById("3").checked = false;
     } else if (document.getElementById("4").checked && correctOption === 4) {
-      // console.log("correct");
       saveCorrectOption(true);
       document.getElementById("4").checked = false;
     } else {
       saveCorrectOption(false);
-      console.log("false");
     }
   };
   const saveCorrectOption = (value) => {
-    setMarking((currentValue) => [...currentValue, value]);
-    console.log(marking);
+    setMarking(() => [...marking, value]);
   };
 
   const [totalmark, setMark] = useState(0);
+
+  useEffect(() => {
+    setMark(0);
+    marking.forEach((mark) => {
+      if (mark == true) {
+        setMark((currentValue) => {
+          return currentValue + 1;
+        });
+      }
+    });
+  }, [marking]);
+
   const submitTest = () => {
     optionCheck();
     setIsOpen(true);
     document.getElementById("submitBtn").disabled = true;
     document.getElementById("changeBtn").disabled = true;
-    marking.forEach((mark) => {
-      if (mark == true) {
-        console.log(" ");
-        setMark((currentValue) => {
-          console.log(currentValue);
-          return currentValue + 1;
-        });
-      }
-    });
-
-    console.log(marking);
   };
+
   return (
     <>
       {" "}

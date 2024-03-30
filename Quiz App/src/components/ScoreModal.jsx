@@ -11,10 +11,10 @@ const Modal = ({ setIsOpen, maxMark, totalmark }) => {
         <h3>
           Score: {totalmark}/{maxMark}
         </h3>
-        <button onClick={() => setIsOpen(false)} className={style.startover}>
+        <button onClick={() => location.reload} className={style.startover}>
           Start Over
         </button>
-        <button onClick={() => setIsOpen(false)}>close</button>
+        <button onClick={() => setIsOpen(false)}>Close</button>
       </div>
     </>,
     document.getElementById("scoreModal")

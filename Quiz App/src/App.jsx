@@ -8,8 +8,8 @@ const App = () => {
   const [questionNo, setQNO] = useState(0);
   const [questions, setQs] = useState(content);
   const [question, setQ] = useState(questions);
-  const [marking, setMarking] = useState([true]);
-  const [time, setTime] = useState(30); //in minutes
+  const [marking, setMarking] = useState([]);
+  const [time, setTime] = useState(10); //in minutes
   const [timeUp, setTimeup] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "../style.module.css";
 //To go to the next question of the quiz
 const ChangeButton = ({
@@ -27,7 +26,9 @@ const ChangeButton = ({
     }
   };
   const saveCorrectOption = (value) => {
-    setMarking([...marking, value]);
+    setMarking((currentValue) => {
+      return [...currentValue, value];
+    });
   };
   const next = () => {
     optionCheck();
