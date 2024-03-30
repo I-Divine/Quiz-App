@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Modal from "./scoreModal";
+import Modal from "./ScoreModal";
 import style from "../style.module.css";
 const SubmitButton = ({
   marking,
